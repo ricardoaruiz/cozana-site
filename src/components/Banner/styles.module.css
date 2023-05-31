@@ -1,3 +1,13 @@
+.banner {
+  position: relative;
+}
+
+.banner__img {
+  width: 100%;
+  /* review */
+  /* height: calc(100vh - 108px); */
+}
+
 .banner__title {
   color: #f9f9f9;
   font-family: Pacifico, cursive;

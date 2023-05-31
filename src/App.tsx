@@ -1,16 +1,11 @@
 import { Header } from "./components/Header";
-
-import cozonac1 from "./assets/images/cozonac1.png";
+import { Banner } from "./components/Banner";
 
 function App() {
   return (
     <>
       <Header />
-
-      <section className="banner">
-        <img className="banner__img" src={cozonac1} alt="" />
-        <h2 className="banner__title">Făcut cu dragoste</h2>
-      </section>
+      <Banner />
 
       <section className="despre" id="despre">
         <h2 className="despre__title">Despre</h2>
