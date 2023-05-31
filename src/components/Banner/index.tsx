@@ -1,12 +1,15 @@
-import cozonac1 from "../../assets/images/cozonac1.png";
-
 import styles from "./styles.module.css";
 
-export function Banner() {
+type BannerProps = {
+  img: string;
+  text: string;
+};
+
+export function Banner({ img, text }: BannerProps) {
   return (
     <section className={styles.banner} id="banner">
-      <img className={styles.banner__img} src={cozonac1} alt="" />
-      <h2 className={styles.banner__title}>Făcut cu dragoste</h2>
+      <img className={styles.banner__img} src={img} alt="" />
+      <h2 className={styles.banner__title}>{text}</h2>
     </section>
   );
 }
