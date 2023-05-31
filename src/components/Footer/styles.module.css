@@ -1,3 +1,9 @@
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .rodape {
   text-align: center;
   padding: 80px 0px 80px 0px;
@@ -40,4 +46,40 @@
 
 span {
   color: #a86141;
+}
+
+.contact {
+  text-align: center;
+  padding: 2.5rem;
+  background: #9d8154;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #fff;
+}
+
+.fa-whatsapp {
+  color: #fff;
+}
+
+.contact__details--item {
+  font-size: 1.25rem;
+  color: #f9f9f9;
+  margin-bottom: 15px;
+}
+
+.contact__details--item:last-child {
+  margin-bottom: 0;
+}
+
+.contact__details {
+  list-style: none;
+  text-align: right;
 }
