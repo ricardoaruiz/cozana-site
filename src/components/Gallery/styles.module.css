@@ -1,15 +1,15 @@
-.servicii__container {
-  display: grid;
-  /* grid-template-columns: repeat(4, 300px); */
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  justify-content: center;
-  gap: 20px;
-}
-
 .servicii {
   text-align: center;
   padding: 5rem;
   background: #efead6;
+  scroll-margin-top: 4rem;
+}
+
+.servicii__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
+  gap: 20px;
 }
 
 .servicii__title {
