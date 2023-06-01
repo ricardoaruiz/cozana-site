@@ -2,20 +2,30 @@ import cx from "classnames";
 
 import styles from "./styles.module.css";
 
-export function Gallery() {
+export type GalleryImage = {
+  img: string;
+  alt: string;
+};
+
+type GalleryProps = {
+  title?: string;
+  images: GalleryImage[];
+};
+
+export function Gallery({ title = "Galerie", images }: GalleryProps) {
   return (
     <section className={styles.servicii} id="galerie">
-      <h2 className={styles.servicii__title}>Galerie</h2>
+      <h2 className={styles.servicii__title}>{title}</h2>
 
       <div className={styles.servicii__container}>
-        <div className={cx(styles.servicii__img, styles.one)}></div>
-        <div className={cx(styles.servicii__img, styles.two)}></div>
-        <div className={cx(styles.servicii__img, styles.three)}></div>
-        <div className={cx(styles.servicii__img, styles.four)}></div>
-        <div className={cx(styles.servicii__img, styles.five)}></div>
-        <div className={cx(styles.servicii__img, styles.six)}></div>
-        <div className={cx(styles.servicii__img, styles.seven)}></div>
-        <div className={cx(styles.servicii__img, styles.eight)}></div>
+        {images.map(({ img, alt }) => (
+          <img
+            key={alt}
+            src={img}
+            alt={alt}
+            className={cx(styles.servicii__img)}
+          />
+        ))}
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
 import cx from "classnames";
 import styles from "./styles.module.css";
 
-type ItemMenu = {
+export type ItemMenu = {
   label: string;
   href: string;
-  style: string;
+  style: "albastru" | "galben" | "rosu";
 };
 
 type MenuProps = {
