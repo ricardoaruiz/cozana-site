@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import cx from "classnames";
 import styles from "./styles.module.css";
 
@@ -18,9 +19,9 @@ export function Menu({ items }: MenuProps) {
         {items.map(({ label, href, style }) => {
           return (
             <li className={styles.menu__item}>
-              <a className={cx(styles.menu__link, styles[style])} href={href}>
+              <Link to={href} className={cx(styles.menu__link, styles[style])}>
                 {label}
-              </a>
+              </Link>
             </li>
           );
         })}

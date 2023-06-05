@@ -4,9 +4,9 @@ import { ItemMenu, Menu } from "./components/Menu";
 import styles from "./styles.module.css";
 
 const MENU_ITEMS: ItemMenu[] = [
-  { label: "Despre", href: "#despre", style: "albastru" },
-  { label: "Galerie", href: "#galerie", style: "galben" },
-  { label: "Contact", href: "#contact", style: "rosu" },
+  { label: "Despre", href: "/despre", style: "albastru" },
+  { label: "Galerie", href: "/cakes", style: "galben" },
+  { label: "About", href: "/about", style: "galben" },
 ];
 
 export function Header() {
